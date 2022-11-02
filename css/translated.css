@@ -2,7 +2,7 @@
 /*PARTIALS*/
 /*HEADER*/
 .background {
-  background-image: url(/imagenes/Background/final7.jpg);
+  background-image: url(/img/Background/final7.jpg);
   background-position: center;
   background-color: rgba(252, 252, 252, 0.022);
   background-blend-mode: lighten;
@@ -244,16 +244,16 @@
 
 /* Example images */
 #slide_1 {
-  background-image: url(/imagenes/Estudio/Emi.jpg); }
+  background-image: url(/img/Estudio/Emi.jpg); }
 
 #slide_2 {
-  background-image: url(/imagenes/Estudio/Emi.jpg); }
+  background-image: url(/img/Estudio/Emi.jpg); }
 
 #slide_3 {
-  background-image: url(/imagenes/Estudio/Emi.jpg); }
+  background-image: url(/img/Estudio/Emi.jpg); }
 
 #slide_4 {
-  background-image: url(/imagenes/Estudio/Emi.jpg); }
+  background-image: url(/img/Estudio/Emi.jpg); }
 
 .li_slide {
   background-size: cover;
