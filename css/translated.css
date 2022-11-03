@@ -94,44 +94,42 @@
 /*FOOTER*/
 .footer {
   background-color: #111111; }
-  .footer .footer__form {
-    margin-left: 100px; }
-    .footer .footer__form .footer__form__query {
-      max-width: 500px;
-      background-color: #111111;
-      padding: 30px;
+  .footer .footer__form .footer__form__query {
+    max-width: 500px;
+    background-color: #111111;
+    padding: 30px;
+    margin-top: 20px;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: white; }
+    .footer .footer__form .footer__form__query .footer__form__query__button {
+      width: 100%;
+      border: solid white 1px;
+      background-color: transparent;
+      padding: 12px;
+      color: white;
+      margin: 16px 0;
+      font-size: 18px; }
+    .footer .footer__form .footer__form__query h4 {
+      font-size: 25px;
+      margin-bottom: 20px; }
+    .footer .footer__form .footer__form__query .footer__form__query__textarea {
+      background-color: transparent;
       margin-top: 20px;
-      border-radius: 4px;
+      font-size: 16px;
+      width: 100%; }
+    .footer .footer__form .footer__form__query .footer__form__query__controls {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 16px;
+      border: 1px solid #ebebeb;
       font-family: 'calibri';
-      color: white; }
-      .footer .footer__form .footer__form__query .footer__form__query__button {
-        width: 100%;
-        border: solid white 1px;
-        background-color: transparent;
-        padding: 12px;
-        color: white;
-        margin: 16px 0;
-        font-size: 18px; }
-      .footer .footer__form .footer__form__query h4 {
-        font-size: 25px;
-        margin-bottom: 20px; }
-      .footer .footer__form .footer__form__query .footer__form__query__textarea {
-        background-color: transparent;
-        margin-top: 20px;
-        font-size: 16px;
-        width: 100%; }
-      .footer .footer__form .footer__form__query .footer__form__query__controls {
-        width: 100%;
-        padding: 10px;
-        margin-bottom: 16px;
-        border: 1px solid #ebebeb;
-        font-family: 'calibri';
-        font-size: 18px;
-        color: white;
-        background-color: transparent;
-        border-top: none;
-        border-left: none;
-        border-right: none; }
+      font-size: 18px;
+      color: white;
+      background-color: transparent;
+      border-top: none;
+      border-left: none;
+      border-right: none; }
 
 /*VIEWS*/
 /*HOME*/
@@ -244,16 +242,16 @@
 
 /* Example images */
 #slide_1 {
-  background-image: url(/img/Estudio/Emi.jpg); }
+  background-image: url(../img/Estudio/Emi.jpg); }
 
 #slide_2 {
-  background-image: url(/img/Estudio/Emi.jpg); }
+  background-image: url(../img/Estudio/Emi.jpg); }
 
 #slide_3 {
-  background-image: url(/img/Estudio/Emi.jpg); }
+  background-image: url(../img/Estudio/Emi.jpg); }
 
 #slide_4 {
-  background-image: url(/img/Estudio/Emi.jpg); }
+  background-image: url(../img/Estudio/Emi.jpg); }
 
 .li_slide {
   background-size: cover;
