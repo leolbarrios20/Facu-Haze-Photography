@@ -4,30 +4,31 @@
     background-color: #111111;
 
     .footer__form{
-
         
         .footer__form__query {
-            max-width: 500px;
+            max-width: 900px;
             background-color: #111111;
             padding: 30px;
             margin-top: 20px;
             border-radius: 4px;
-            font-family: 'calibri';
             color: white;
 
             .footer__form__query__button {
                 width: 100%;
-                border: solid white 1px;
+                border: solid #ffffff 1px;
                 background-color: transparent;
                 padding: 12px;
                 color: white;
                 margin: 16px 0;
-                font-size: 18px;
+                font-size: 16px;
               }
 
             h4 {
-                font-size: 25px;
+                font-size: 20px;
                 margin-bottom: 20px;
+                text-align: center;
+                font-family: 'Poiret One', cursiv;
+                letter-spacing: 5px;
               }
 
               .footer__form__query__textarea{
@@ -35,15 +36,20 @@
                 margin-top: 20px;
                 font-size: 16px;
                 width: 100%;
+                border: solid #ffffff 1px;
+                
+                &::placeholder{
+                  padding: 10px;
+                }
               }
 
             .footer__form__query__controls {
                 width: 100%;
                 padding: 10px;
                 margin-bottom: 16px;
-                border: 1px solid #ebebeb;
+                border: 1px solid #ffffff;
                 font-family: 'calibri';
-                font-size: 18px;
+                font-size: 15px;
                 color: white;
                 background-color: transparent;
                 border-top: none;

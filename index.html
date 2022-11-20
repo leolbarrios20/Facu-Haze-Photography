@@ -4,73 +4,96 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/translated.css">
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="/Facu-Haze-Photography/css/translated.css"> 
+    <!--<link rel="stylesheet" href="/Facu-Haze-Photography/css/translated.css"> -->
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=EB+Garamond&family=Island+Moments&family=Josefin+Slab:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Oswald:wght@200;300;400;500&family=Poiret+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css">
     <title>Facu Haze</title>
 </head>
 <body>
     <section class="background">
-      <header class="background__header" id="header">
-            <h2>FH</h2>
-        <nav>
-            <ul>
-                <li>
-                    <a href="">Inicio</a>
-                    <a href="#portafolio">Portafolio</a>
-                    <a href="#footer">Contacto</a>
-                </li>
+      <header class="header animate__animated animate__zoomIn" id="header" >
+      <nav class="navbar navbar-expand-md navbar-dark pt-3 ps-3 pe-3">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="">
+            <i class="bi bi-camera-fill"></i>
+            <span class="text-warning">FH</span>
+          </a>
+          <img class="d-md-none" src="./images/icons/menu.svg" alt="" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link active m-2 p-2 nav text-white" href="#">Inicio</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link p-2 m-2 nav text-white" href="#">Portafolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link p-2 m-2 nav text-white" href="#" >Contacto</a>
+              </li>
             </ul>
-        </nav>
-        <div class="background__header__icon">
-          <img  src="../img/iconos/behance.png" alt="logo-behace">
-          <img  src="../img/iconos/instagram.png" alt="logo-instagram">
-          <img  src="../img/iconos/facebook.png" alt="logo-facebook">
+            <hr class="text-white">
+            <ul class="navbar-nav flex-row flex-wrap text-light">
+              <li class="nav-item col-4 col-md-auto p-3">
+                <a class="text-white text-decoration-none d-flex flex-column" href="">
+                  <i style="font-size: 25px;" class="bi bi-whatsapp p-2"></i>
+                  <small class="d-md-none ms-2">Whatsapp</small>
+                </a>
+              </li>
+              <li class="nav-item col-4 col-md-auto p-3">
+                <a class="text-white text-decoration-none d-flex flex-column" href="">
+                  <i style="font-size: 28px;" class="bi bi-behance p-2"></i>
+                  <small class="d-md-none">Behance</small>
+                </a>
+              </li>
+              <li class="nav-item col-4 col-md-auto p-3">
+                <a class="text-white  text-decoration-none d-flex flex-column" href="">
+                  <i style="font-size: 25px;" class="bi bi-instagram p-2"></i>
+                  <small class="d-md-none">Instagram</small>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
+      </nav>
       </header>
       <div class="background__title">
-          <h1>Facu Haze</h1>
-          <h2>Fotografía & Retoque</h2>
-          <p>Portafolio</p>
-          <a href="#portafolio"><img src="../img/iconos/flecha.png" alt="flecha"></a>
+          <h1 class="animate__animated animate__zoomIn">Facu Haze</h1>
+          <h2 class="animate__animated animate__fadeInLeft">Fotografía & Retoque</h2>
+          <a href="#portafolio" class="animate__animated animate__fadeInUp">
+            <li>
+              <i class="bi bi-arrow-down-circle bg-text-warning" style="font-size: 4rem;"></i>
+            </li>
+          </a>
       </div>
       <div class="background__empty">
         <div></div>
       </div>
-  </section>
+    </section>
     <main>
-        <section class="main container">
+      <section class="main container-fluid">
             <div class="main__presentation">
               <div class="main__presentation__titles" id="portafolio">
                 <h3 data-aos="fade-down" data-aos-duration="1000">Presentación</h3>
-               <!--<h4 data-aos="fade-right" data-aos-duration="1000"></h4>--> 
               </div>
             </div>
             <div class="main__facundo"> 
-              <div data-aos="fade-up" data-aos-duration="1000">
-                <h2>Mi nombre es <strong>Facundo</strong></h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti inventore iste distinctio consectetur. Temporibus assumenda blanditiis voluptates non debitis nostrum esse odio dolorem. Dolore quisquam ipsa eligendi cupiditate distinctio! Fuga blanditiis reiciendis incidunt voluptas iste, tempore libero unde repudiandae minima distinctio optio id velit explicabo animi natus amet debitis assumenda repellat nostrum ea illo? Facilis consequatur quam earum ipsum nostrum adipisci voluptas assumenda magni tempora sint fugi exercitationem!</p>
-              </div>
-
-              <div id="pSlider">
-                <ol id="slider-container" dir="ltr">
-                  <li id="slide_1" class="li_slide">
-                    <div class="slide-snapper"></div>
-                    <a class="prev_slide" href="#slide_4"></a> <a class="next_slide" href="#slide_2"></a> </li>
-                  <li id="slide_2" class="li_slide">
-                    <div class="slide-snapper"></div>
-                    <a class="prev_slide" href="#slide_1"></a> <a class="next_slide" href="#slide_3"></a> </li>
-                  <li id="slide_3" class="li_slide">
-                    <div class="slide-snapper"></div>
-                    <a class="prev_slide" href="#slide_2"></a> <a class="next_slide" href="#slide_4"></a> </li>
-                  <li id="slide_4" class="li_slide">
-                    <div  class="slide-snapper"></div>
-                    <a class="prev_slide" href="#slide_3"></a> <a class="next_slide" href="#slide_1"></a> </li>
-                </ol>
-              </div>
-              <nav class="main__presentation__nav" data-aos="fade-left" data-aos-duration="3000">
-                <ul>
+              <div class="container">
+                <div>
+                  <img id="facu" data-aos="fade-left" data-aos-duration="1000" src="./images/large/6.jpg" alt="">
+                </div>
+                <div data-aos="fade-up" data-aos-duration="1000">
+                  <h2 data-aos="fade-right" data-aos-duration="1000">Mi nombre es <strong>Facundo</strong></h2>
+                  <p>Lorem ipsum dolor sit amet consectetur <strong>adipisicing</strong> elit. Deleniti inventore iste distinctio consectetur. Temporibus assumenda <strong>blanditiis</strong>  voluptates non debitis nostrum esse odio dolorem. Dolore quisquam ipsa eligendi cupiditate distinctio! Fuga blanditiis reiciendis incidunt voluptas iste, tempore libero unde repudiandae minima distinctio optio id velit explicabo animi natus amet debitis assumenda repellat nostrum ea illo?</p>
+                </div>
+        
+              </div>              
+              <nav class="main__presentation__nav" data-aos="fade-left" data-aos-duration="1000">
+                <ul> 
                   <li>
                     <a href="">Estudio</a>
                     <a href="">Retoque Digital</a>
@@ -79,26 +102,91 @@
                   </li>
                 </ul>
               </nav>
-
             </div>
-            <div class="main__proyects" id="portafolio">
-              <div class="main__proyects__titles" id="estudio">
-                <h3 data-aos="fade-down" data-aos-duration="2000">Estudio</h3>
-                <a href="#header"><img class="main__proyects__arrowup" src="../img/iconos/flecha-hacia-arriba.png" alt="flecha-hacia-arriba"></a>
+            <div class="container-fluid">
+                <div class="row mt-4">
+                  <div class="col-lg-3 col-md-6 mb-lg-0">
+                    <a href="./images/large/2.jpg" class="fancybox" data-fancybox="gallery">
+                      <img src="./images/large/2.jpg" class="w-100 rounded mb-1" alt="">
+                    </a>
+                  </div>
+                  <div class="col-lg-3 col-md-6 mb-lg-0">
+                    <a href="./images/large/4.jpg" class="fancybox" data-fancybox="gallery">
+                      <img src="./images/large/4.jpg" class="w-100 rounded mb-1" alt="">
+                    </a>
+                  </div>
+                  <div class="col-lg-3 col-md-6 mb-lg-0">
+                    <a href="./images/large/3.jpg" class="fancybox" data-fancybox="gallery">
+                      <img src="./images/large/3.jpg" class="w-100 rounded mb-1" alt="">
+                    </a>
+                  </div>
+                  <div class="col-lg-3 col-md-6 mb-lg-0">
+                    <a href="./images/large/6.jpg" class="fancybox" data-fancybox="gallery">
+                      <img src="./images/large/6.jpg" class="w-100 rounded mb-1" alt="">
+                    </a>
+                  </div>                  
+                  <div class="col-lg-3 col-md-6 mb-lg-0">
+                    <a href="./images/large/5.jpg" class="fancybox" data-fancybox="gallery">
+                      <img src="./images/large/5.jpg" class="w-100 rounded mb-1" alt="">
+                    </a>
+                  </div>
+                  <div class="col-lg-3 col-md-6 mb-lg-0">
+                    <a href="./images/large/8.jpg" class="fancybox" data-fancybox="gallery">
+                      <img src="./images/large/8.jpg" class="w-100 rounded mb-1" alt="">
+                    </a>
+                  </div>
+                  <div class="col-lg-3 col-md-6 mb-lg-0">
+                    <a href="./images/large/9.jpg" class="fancybox" data-fancybox="gallery">
+                      <img src="./images/large/9.jpg" class="w-100 rounded mb-1" alt="">
+                    </a>
+                  </div>
+                  <div class="col-lg-3 col-md-6 mb-lg-0">
+                    <a href="./images/large/10.jpg" class="fancybox" data-fancybox="gallery">
+                      <img src="./images/large/10.jpg" class="w-100 rounded mb-1" alt="">
+                    </a>
+                  </div>
+                  <div class="col-lg-3 col-md-6 mb-lg-0">
+                    <a href="./images/large/11.jpg" class="fancybox" data-fancybox="gallery">
+                      <img src="./images/large/11.jpg" class="w-100 rounded mb-1" alt="">
+                    </a>
+                  </div>
+                </div>
               </div>
-            <!--  <h4 data-aos="fade-right" data-aos-duration="1000">Presentación</h4> -->
+              
+              
+
+            <!--
+
+            
+            <div class="row main__gallery">
+              <div class="col-lg-4 col-md-12 mb-lg-0">
+                <img id="photo1" src="/img/estudio/estas/DSC_0867.jpg" class="w-100 rounded mb-1" alt="estudio"/>
+                <img src="./img/estudio/estas/DSC_0448.jpg" class="w-100 shadow-1-strong rounded mb-1" alt="estudio"/>
+              </div>
+              <div class="col-lg-4 mb-lg-0">
+                <img src="../img/estudio/estas/DSC_0536.jpg" class="w-100 shadow-1-strong rounded mb-1" alt="estudio"/>
+                <img src="../img/estudio/estas/DSC_0867.jpg" class="w-100 shadow-1-strong rounded mb-1" alt="Yosemite National Park"/> 
+              </div>
+              <div class="col-lg-4 mb-lg-0">
+                <img src="../img/estudio/estas/DSC_0867.jpg" class="w-100 shadow-1-strong rounded mb-1" alt="Waves at Sea"/>
+                <img src="../img/estudio/estas/RIRI-29.jpg" class="w-100 shadow-1-strong rounded mb-1" alt="Yosemite National Park" />
+              </div>
+            </div>
+            <div class="main__fullgalleryFlex" data-aos="fade-right" data-aos-duration="1000">
+              <img src="../img/iconos/flecha-derecha.png" alt="estudio">
+              <a class="main__fullgalleryFlex__item" data-aos="fade-right" data-aos-duration="1000" href="#">Ver Galeria Completa</a>
             </div>
             <div class="row main__gallery">
               <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-                <img src="/img/estudio/estas/DSC_0867.jpg" class="w-100 rounded mb-4" alt="estudio"/>
-                <img src="./img/estudio/estas/DSC_0448.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="estudio"/>
+                <img src="/img/estudio/estas/DSC_0867.jpg" class="w-100 rounded mb-1" alt="estudio"/>
+                <img src="./img/estudio/estas/DSC_0448.jpg" class="w-100 shadow-1-strong rounded mb-1" alt="estudio"/>
               </div>
               <div class="col-lg-4 mb-4 mb-lg-0">
-                <img src="../img/estudio/estas/DSC_0536.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="estudio"/>
-                <img src="../img/estudio/estas/DSC_0867.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="Yosemite National Park"/> 
+                <img src="../img/estudio/estas/DSC_0536.jpg" class="w-100 shadow-1-strong rounded mb-1" alt="estudio"/>
+                <img src="../img/estudio/estas/DSC_0867.jpg" class="w-100 shadow-1-strong rounded mb-1" alt="Yosemite National Park"/> 
               </div>
               <div class="col-lg-4 mb-4 mb-lg-0">
-                <img src="../img/estudio/estas/DSC_0867.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="Waves at Sea"/>
+                <img src="../img/estudio/estas/DSC_0867.jpg" class="w-100 shadow-1-strong rounded mb-1" alt="Waves at Sea"/>
                 <img src="../img/estudio/estas/RIRI-29.jpg" class="w-100 shadow-1-strong rounded mb-1" alt="Yosemite National Park" />
               </div>
           </div>
@@ -106,39 +194,25 @@
               <img src="../img/iconos/flecha-derecha.png" alt="estudio">
               <a class="main__fullgalleryFlex__item" data-aos="fade-right" data-aos-duration="1000" href="#">Ver Galeria Completa</a>
             </div>
-            <div class="row main__gallery">
-              <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-                <img src="/img/estudio/estas/DSC_0867.jpg" class="w-100 rounded mb-4" alt="estudio"/>
-                <img src="./img/estudio/estas/DSC_0448.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="estudio"/>
-              </div>
-              <div class="col-lg-4 mb-4 mb-lg-0">
-                <img src="../img/estudio/estas/DSC_0536.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="estudio"/>
-                <img src="../img/estudio/estas/DSC_0867.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="Yosemite National Park"/> 
-              </div>
-              <div class="col-lg-4 mb-4 mb-lg-0">
-                <img src="../img/estudio/estas/DSC_0867.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="Waves at Sea"/>
-                <img src="../img/estudio/estas/RIRI-29.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="Yosemite National Park" />
-              </div>
-          </div>
-            <div class="main__fullgalleryFlex" data-aos="fade-right" data-aos-duration="1000">
-              <img src="../img/iconos/flecha-derecha.png" alt="estudio">
-              <a class="main__fullgalleryFlex__item" data-aos="fade-right" data-aos-duration="1000" href="#">Ver Galeria Completa</a>
-            </div>
-        </section>
-        <footer class="footer" id="footer">
-          <form class="footer__form" id="form" action="https://formsubmit.co/leolbarrios20@gmail.com" method="POST" class="container">
-            <section class="footer__form__query col-10 mx-auto">
-                <h4>Realizá tu consulta</h4>
-                <input class="footer__form__query__controls" type="text" name="nombre" id="nombres" placeholder="Ingresá tu Nombre">
-                <input class="footer__form__query__controls" type="number" name="contacto" placeholder="Ingresá un número de contacto">
-                <input class="footer__form__query__controls" type="email" name="correo" id="correo" placeholder="Ingresá tu Correo (No te enviaremos ninguna publicidad)">
-                <textarea class="footer__form__query__textarea" name="consulta" cols="70" rows="5" placeholder="Cuál es tu consulta?"></textarea>
-                <input class="footer__form__query__button" type="submit" value="Enviar">
-            </section>
-          </form>
-        </footer>
+-->
+      </section>
     </main>
+    <footer class="footer" id="footer">
+      <form class="footer__form" id="form" action="https://formsubmit.co/leolbarrios20@gmail.com" method="POST" class="container">
+        <section class="footer__form__query col-10 mx-auto">
+            <h4 >Realizá tu consulta</h4>
+            <input class="footer__form__query__controls" type="text" name="nombre" id="nombres" placeholder="Ingresá tu Nombre">
+            <input class="footer__form__query__controls" type="number" name="contacto" placeholder="Ingresá un número de contacto">
+            <input class="footer__form__query__controls" type="email" name="correo" id="correo" placeholder="Ingresá tu Correo">
+            <textarea class="footer__form__query__textarea" name="consulta" cols="70" rows="5" placeholder="Cuál es tu consulta?"></textarea>
+            <input class="footer__form__query__button" type="submit" value="Enviar">
+        </section>
+      </form>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
     <script>
       AOS.init();
     </script>
