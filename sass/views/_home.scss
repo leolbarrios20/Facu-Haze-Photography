@@ -21,17 +21,13 @@ body{
             &__titles{
                 margin: 10px 0px 10px 0px;
                 padding: 10px 0px 10px 0px;
-                
-
-                
-                text-align: center;
+                text-align: left;
     
     
                 & h3{
                     font-size: 20px;
                     font-weight: 600;
                     font-style: normal;
-                    border-bottom: 1px black solid;
                     color: rgb(0, 0, 0);
                     padding: 10px;
                     letter-spacing: 2px;
@@ -41,14 +37,21 @@ body{
             }
     
             &__nav{
+                margin-top: 100px;
                 padding: 10px 10px 10px 0;
                 width: 100%;
     
                 & ul li{
                     display: flex;
-                    justify-content: space-between;
+                    justify-content: space-evenly;
                     flex-wrap: wrap;
                     align-items: center;
+
+                    @media screen and (max-width: 520px) {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                    }
     
                     & a{
                         text-decoration: none;
@@ -82,8 +85,8 @@ body{
  
             .container{
                 display: flex;
-                justify-content: space-evenly;
-                align-items: flex-start;
+                justify-content: center;
+                align-items: center;
                 align-content: center;
                 gap: 30px;
     
@@ -101,7 +104,7 @@ body{
         
                     p{
                         text-align: left;
-                        font-size: 14px;
+                        font-size: 16px;
                     }
         
                     h5{
