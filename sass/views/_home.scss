@@ -9,9 +9,7 @@ body{
     background-repeat: no-repeat;
     object-fit: cover;
 
-    main{
-        margin: 0 3%;
-    }
+
 
     .main{
         overflow-x: hidden;
@@ -43,13 +41,13 @@ body{
             }
     
             &__nav{
-                padding: 100px 20px 10px 0;
+                padding: 10px 10px 10px 0;
                 width: 100%;
     
                 & ul li{
                     display: flex;
                     justify-content: space-between;
-                    flex-wrap: nowrap;
+                    flex-wrap: wrap;
                     align-items: center;
     
                     & a{
@@ -98,15 +96,12 @@ body{
     
                     h2{
                         margin-bottom: 20px;
-                        font-family: 'Poiret One', cursiv;
+                        font-size: 20px;
                     }
         
                     p{
                         text-align: left;
-                        font-size: 16px;
-                        line-height: 18px;
-                        font-family: 'Poiret One', cursiv;
-                        font-weight: 600;
+                        font-size: 14px;
                     }
         
                     h5{

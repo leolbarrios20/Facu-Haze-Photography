@@ -11,7 +11,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-image: url(/images/large/5.jpg);
+  background-image: url(../images/large/5.jpg);
   background-color: rgba(0, 0, 0, 0.264);
   background-blend-mode: darken;
   background-position: center;
@@ -123,8 +123,6 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   object-fit: cover; }
-  body main {
-    margin: 0 3%; }
   body .main {
     overflow-x: hidden; }
     body .main__presentation {
@@ -143,12 +141,12 @@ body {
           letter-spacing: 2px;
           font-family: 'Poiret One', cursiv; }
       body .main__presentation__nav {
-        padding: 100px 20px 10px 0;
+        padding: 10px 10px 10px 0;
         width: 100%; }
         body .main__presentation__nav ul li {
           display: flex;
           justify-content: space-between;
-          flex-wrap: nowrap;
+          flex-wrap: wrap;
           align-items: center; }
           body .main__presentation__nav ul li a {
             text-decoration: none;
@@ -176,13 +174,10 @@ body {
           flex-direction: column; } }
       body .main__facundo .container div h2 {
         margin-bottom: 20px;
-        font-family: 'Poiret One', cursiv; }
+        font-size: 20px; }
       body .main__facundo .container div p {
         text-align: left;
-        font-size: 16px;
-        line-height: 18px;
-        font-family: 'Poiret One', cursiv;
-        font-weight: 600; }
+        font-size: 14px; }
       body .main__facundo .container div h5 {
         font-size: 30px; }
     body .main__facundo div img {
