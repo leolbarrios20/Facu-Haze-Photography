@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css">
     <title>Facu Haze</title>
 </head>
-<body>
+<body class="bodyContainer">
     <section class="background">
       <header class="header animate__animated animate__zoomIn" id="header" >
       <nav class="navbar navbar-expand-md navbar-dark pt-3 ps-3 pe-3">
@@ -75,7 +75,7 @@
       </div>
     </section>
     <main>
-      <section class="main container">
+      <section class="main container-fluid" >
             <div class="main__presentation">
               <div class="main__presentation__titles" id="portafolio">
                 <h3 data-aos="fade-down" data-aos-duration="1000">Presentación</h3>
@@ -83,15 +83,16 @@
             </div>
             <div class="main__facundo"> 
               <div class="container">
-                <div>
-                  <img id="facu" data-aos="fade-left" data-aos-duration="1000" src="./images/large/6.jpg" alt="">
-                </div>
                 <div data-aos="fade-up" data-aos-duration="1000">
-                  <h2 data-aos="fade-right" data-aos-duration="1000">Mi nombre es <strong>Facundo</strong></h2>
-                  <p>Lorem ipsum dolor sit amet consectetur <strong>adipisicing</strong> elit. Deleniti inventore iste distinctio consectetur. Temporibus assumenda <strong>blanditiis</strong>  voluptates non debitis nostrum esse odio dolorem. Dolore quisquam ipsa eligendi cupiditate distinctio! Fuga blanditiis reiciendis incidunt voluptas iste, tempore libero unde repudiandae minima distinctio optio id velit explicabo animi natus amet debitis assumenda repellat nostrum ea illo?</p>
+                  <h3 data-aos="fade-right" data-aos-duration="1000">Mi nombre es <strong>Facundo</strong></h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque iusto, amet fuga ratione veritatis reprehenderit hic est vero velit nam officia debitis dolorem impedit perspiciatis. Atque veritatis sed cumque voluptatum quam rem ipsam, non aspernatur, commodi et possimus ipsa cupiditate neque voluptatem. Voluptatum velit illo inventore. Animi deserunt quod fuga magni molestias optio, quae doloremque atque tempora libero nostrum voluptas tempore at ad fugit suscipit architecto aliquid consequatur quo. Alias nostrum harum tempora, enim, aut in laudantium autem suscipit nesciunt ipsum sequi deleniti accusantium explicabo iure amet quaerat assumenda. Et.</p>
                 </div>
-              </div>              
-              <nav class="main__presentation__nav" data-aos="fade-left" data-aos-duration="1000">
+                <div>
+                  <img data-aos="fade-left" data-aos-duration="1000" src="./images/large/6.jpg" alt="">
+                </div>
+              </div> 
+              <!--            
+              <nav class="main__presentation__nav">
                 <ul> 
                   <li>
                     <a href="">Estudio</a>
@@ -101,42 +102,88 @@
                   </li>
                 </ul>
               </nav>
+              --> 
+              <div class="main__presentation__work">
+                
+                <h6>Mi Trabajo</h6>
+                <i class="bi bi-camera-fill"></i>
+              </div>
             </div>
-            <div class="container-fluid">
+            <div class="container-fluid gallery">
                 <div class="row mt-4">
                   <div class="col-lg-3 col-md-6 mb-lg-0">
                     <a href="./images/large/2.jpg" class="fancybox" data-fancybox="gallery">
-                      <img src="./images/large/2.jpg" class="w-100 rounded mb-1" alt="">
+                      <img src="./images/large/2.jpg" class="w-100  mb-1" alt="">
                     </a>
                   </div>
                   <div class="col-lg-3 col-md-6 mb-lg-0">
                     <a href="./images/large/4.jpg" class="fancybox" data-fancybox="gallery">
-                      <img src="./images/large/4.jpg" class="w-100 rounded mb-1" alt="">
+                      <img src="./images/large/4.jpg" class="w-100  mb-1" alt="">
                     </a>
                   </div>
                   <div class="col-lg-3 col-md-6 mb-lg-0">
                     <a href="./images/large/3.jpg" class="fancybox" data-fancybox="gallery">
-                      <img src="./images/large/3.jpg" class="w-100 rounded mb-1" alt="">
+                      <img src="./images/large/3.jpg" class="w-100  mb-1" alt="">
                     </a>
                   </div>
                   <div class="col-lg-3 col-md-6 mb-lg-0">
                     <a href="./images/large/6.jpg" class="fancybox" data-fancybox="gallery">
-                      <img src="./images/large/6.jpg" class="w-100 rounded mb-1" alt="">
+                      <img src="./images/large/6.jpg" class="w-100  mb-1" alt="">
                     </a>
                   </div>                  
                   <div class="col-lg-3 col-md-6 mb-lg-0">
                     <a href="./images/large/5.jpg" class="fancybox" data-fancybox="gallery">
-                      <img src="./images/large/5.jpg" class="w-100 rounded mb-1" alt="">
+                      <img src="./images/large/5.jpg" class="w-100  mb-1" alt="">
                     </a>
                   </div>
                   <div class="col-lg-3 col-md-6 mb-lg-0">
                     <a href="./images/large/9.jpg" class="fancybox" data-fancybox="gallery">
-                      <img src="./images/large/9.jpg" class="w-100 rounded mb-1" alt="">
+                      <img src="./images/large/9.jpg" class="w-100  mb-1" alt="">
                     </a>
                   </div>
                   <div class="col-lg-3 col-md-6 mb-lg-0">
                     <a href="./images/large/10.jpg" class="fancybox" data-fancybox="gallery">
-                      <img src="./images/large/10.jpg" class="w-100 rounded mb-1" alt="">
+                      <img src="./images/large/10.jpg" class="w-100  mb-1" alt="">
+                    </a>
+                  </div>
+                  <div class="col-lg-3 col-md-6 mb-lg-0">
+                    <a href="./images/large/11.jpg" class="fancybox" data-fancybox="gallery">
+                      <img src="./images/large/11.jpg" class="w-100  mb-1" alt="">
+                    </a>
+                  </div>
+                  <div class="col-lg-3 col-md-6 mb-lg-0">
+                    <a href="./images/large/2.jpg" class="fancybox" data-fancybox="gallery">
+                      <img src="./images/large/2.jpg" class="w-100  mb-1" alt="">
+                    </a>
+                  </div>
+                  <div class="col-lg-3 col-md-6 mb-lg-0">
+                    <a href="./images/large/4.jpg" class="fancybox" data-fancybox="gallery">
+                      <img src="./images/large/4.jpg" class="w-100  mb-1" alt="">
+                    </a>
+                  </div>
+                  <div class="col-lg-3 col-md-6 mb-lg-0">
+                    <a href="./images/large/3.jpg" class="fancybox" data-fancybox="gallery">
+                      <img src="./images/large/3.jpg" class="w-100  mb-1" alt="">
+                    </a>
+                  </div>
+                  <div class="col-lg-3 col-md-6 mb-lg-0">
+                    <a href="./images/large/6.jpg" class="fancybox" data-fancybox="gallery">
+                      <img src="./images/large/6.jpg" class="w-100  mb-1" alt="">
+                    </a>
+                  </div>                  
+                  <div class="col-lg-3 col-md-6 mb-lg-0">
+                    <a href="./images/large/5.jpg" class="fancybox" data-fancybox="gallery">
+                      <img src="./images/large/5.jpg" class="w-100  mb-1" alt="">
+                    </a>
+                  </div>
+                  <div class="col-lg-3 col-md-6 mb-lg-0">
+                    <a href="./images/large/9.jpg" class="fancybox" data-fancybox="gallery">
+                      <img src="./images/large/9.jpg" class="w-100  mb-1" alt="">
+                    </a>
+                  </div>
+                  <div class="col-lg-3 col-md-6 mb-lg-0">
+                    <a href="./images/large/10.jpg" class="fancybox" data-fancybox="gallery">
+                      <img src="./images/large/10.jpg" class="w-100  mb-1" alt="">
                     </a>
                   </div>
                   <div class="col-lg-3 col-md-6 mb-lg-0">
@@ -145,7 +192,9 @@
                     </a>
                   </div>
                 </div>
-              </div>
+                <button class="btn btn-success mt-3">Galeria Completa</button>
+            </div>
+            </section>
 
             
 
@@ -189,7 +238,7 @@
               <a class="main__fullgalleryFlex__item" data-aos="fade-right" data-aos-duration="1000" href="#">Ver Galeria Completa</a>
             </div>
 -->
-      </section>
+      
     </main>
     <footer class="footer" id="footer">
       <form class="footer__form" id="form" action="https://formsubmit.co/leolbarrios20@gmail.com" method="POST" class="container">

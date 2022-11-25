@@ -1,37 +1,63 @@
 /*HOME*/
 
 
-body{
+.bodyContainer{
     padding: 0;
     margin: 0;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    object-fit: cover;
-
-
+    background-color: #f1f1f1;
+    margin: 0 auto;
 
     .main{
         overflow-x: hidden;
+
+        .gallery{
+            max-width: 1700px;
+            margin-bottom: 200px;
+        }
+
     
         &__presentation{
+
+            &__work{
+
+                max-width: 1700px;
+                margin: 0 auto;
+
+                h6, i{
+                    font-size: 27px;
+                    color: rgb(22, 22, 22);
+                    padding: 10px;
+                }
+
+                i{
+                    padding:0 15px 5px 0;
+                    color: rgb(22, 22, 22);
+                }
+
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                align-content: center;
+                padding: 20px;
+            } 
     
             margin-top: 100px;
     
             &__titles{
                 margin: 10px 0px 10px 0px;
                 padding: 10px 0px 10px 0px;
-                text-align: left;
-    
-    
+                
+
                 & h3{
-                    font-size: 20px;
+                    font-size: 23px;
                     font-weight: 600;
                     font-style: normal;
                     color: rgb(0, 0, 0);
                     padding: 10px;
-                    letter-spacing: 2px;
+                    letter-spacing: 5px;
                     font-family: 'Poiret One', cursiv;
+                    text-align: center;
+                    margin-bottom: 90px;
                 }
     
             }
@@ -55,40 +81,31 @@ body{
     
                     & a{
                         text-decoration: none;
-                        color: rgb(0, 0, 0);
+                        color: rgb(22, 22, 22);
                         font-size: 14px;
                         font-weight: 600;
                         text-align: center;
                         letter-spacing: 1px;
                         padding: 15px 20px;
-                        transition: 0.4s ease;
-    
-                        
-    
-                        &:hover{
-                            background-color: #000000;
-                            color: white;
-                        }
+
                     }
                 }
                 
-    
-                & #estudio{
-                    padding: 0px 0 0px 0;
-                }
             }
     
         }
     
         &__facundo{
-    
+            
+            
  
             .container{
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 align-content: center;
-                gap: 30px;
+                gap: 50px;
+                margin-bottom: 200px;
     
                 @media screen and (max-width: 1000px) {
                     display: flex;
@@ -96,19 +113,18 @@ body{
                 }
     
                 div{
+
+                    max-width: 500px;
     
-                    h2{
-                        margin-bottom: 20px;
-                        font-size: 20px;
+                    h3{
+                        margin-bottom: 10px;
+                        font-size: 21px;
                     }
         
                     p{
-                        text-align: left;
+                        text-align: justify;
                         font-size: 16px;
-                    }
-        
-                    h5{
-                        font-size: 30px;
+                        
                     }
                 }
         
