@@ -4,25 +4,20 @@
 .bodyContainer{
     padding: 0;
     margin: 0;
-    background-color: #000000;
-
+    overflow-x: hidden;
+    background-color: #111111;
 
     .main{
-        
-        overflow-x: hidden;
 
         .wg-box-content {
             position: relative;
-            margin: 0;
-            overflow: hidden;
-            margin-top: 5%;
-          
+
             .wg-box-content-overlay {
               margin: 0 auto;
-              background: rgba(0, 0, 0, 0.363);
+              background: rgba(0, 0, 0, 0.663);
               position: absolute;
               height: 100%;
-              width: 98%;
+              width: 96%;
               left: 0;
               top: 0;
               bottom: 0;
@@ -31,15 +26,20 @@
               -webkit-transition: all 0.4s ease-in-out 0s;
               -moz-transition: all 0.4s ease-in-out 0s;
               transition: all 0.4s ease-in-out 0s;
+
             }
            
             &:hover .wg-box-content-overlay {
               opacity: 1;
+              cursor: pointer;
             }
           }
           
           .wg-box-content-image {
             width: 100%;
+
+
+
           }
           
           .wg-box-content-details {
@@ -79,7 +79,7 @@
           }
           
           .wg-box-fadeIn-bottom {
-            left: 80%;
+            top: 80%;
           }
     
         &__presentation{
@@ -180,15 +180,6 @@
                 align-items: flex-start;
                 align-content: center;
                 gap: 50px;
-
-                
-                
-                
-
-                @media screen and (max-width: 1000px) {
-                    display: flex;
-                    flex-direction: column;
-                }
     
                 .titles__container{
 

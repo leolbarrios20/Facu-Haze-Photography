@@ -1,17 +1,19 @@
 /*FOOTER*/
 
 .footer{
-    background-color: #111111;
+    background-color: #181818;
+    margin: 0;
+    padding: 0;
 
     .footer__form{
-        
+
+        margin-top: 200px;
         .footer__form__query {
             max-width: 500px;
             background-color: transparent;
-            padding: 30px;
-            margin-top: 20px;
-            border-radius: 4px;
+            padding: 30px 0;
             color: white;
+            
 
             .footer__form__query__button {
                 width: 100%;

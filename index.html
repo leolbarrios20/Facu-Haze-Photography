@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/translated.css">
-    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--<link rel="stylesheet" href="/Facu-Haze-Photography/css/translated.css"> -->
     <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
@@ -30,7 +30,7 @@
                 <a class="nav-link active m-2 p-2 nav text-white" href="#">Inicio</a>
               </li>
               <li class="nav-item ">
-                <a class="nav-link p-2 m-2 nav text-white" href="#">Portafolio</a>
+                <a class="nav-link p-2 m-2 nav text-white" href="/html/retoque.html">Portafolio</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link p-2 m-2 nav text-white" href="#" >Contacto</a>
@@ -64,7 +64,7 @@
       <div class="background__title">
           <h1 class="animate__animated animate__zoomIn">Facu Haze</h1>
           <h2 class="animate__animated animate__fadeInLeft">Fotografía & Retoque</h2>
-          <a href="#main" class="animate__animated animate__fadeInUp">
+          <a href="#gallery" class="animate__animated animate__fadeInUp">
             <li>
               <i class="bi bi-arrow-down-circle bg-text-warning" style="font-size: 4rem;"></i>
             </li>
@@ -75,7 +75,8 @@
       </div>
     </section>
     <main>
-      <nav class="main__presentation__nav">
+      <!--
+              <nav class="main__presentation__nav">
         <ul> 
           <li>
             <a href="">Estudio</a>
@@ -85,12 +86,13 @@
           </li>
         </ul>
       </nav>
-      <p style="text-align: center;">Hace click sobre las imágenes para ver el contenido</p>
-      <section id="main" class="main container-fluid" > 
-        <div class="row mt-2">
-          <div class="wg-box-content col-lg-4 col-md-6 mb-lg-0">
+      -->
+
+      <section id="main" class="main container" > 
+        <div id="gallery" class="row mt-2">
+          <div class="wg-box-content col-lg-4 col-md-4 mb-lg-0">
             <div class="wg-box-content-overlay"></div>
-            <img class="wg-box-content-image" src="./images/large/2.jpg">
+            <img class="wg-box-content-image" src="./images/large/7.jpg">
             <div class="wg-box-content-details wg-box-fadeIn-bottom">
               <h3 class="wg-box-content-title">Ver Galería</h3>
               <p class="wg-box-content-text">This is a short description</p>
@@ -100,21 +102,21 @@
               </div>
             </div>
           </div>
-          <div class="wg-box-content col-lg-4 col-md-6 mb-lg-0">
+          <div class="wg-box-content col-lg-4 col-md-4 mb-lg-0">
             <div class="wg-box-content-overlay"></div>
-            <img class="wg-box-content-image" src="./images/large/4.jpg">
+            <img class="wg-box-content-image" src="./images/large/12.jpg">
             <div class="wg-box-content-details wg-box-fadeIn-bottom">
-              <h3 class="wg-box-content-title">Ver Galería</h3>
-              <p class="wg-box-content-text">This is a short description</p>
-              <div>
+              <h3 class="wg-box-content-title">Estudio</h3>
+              <div class="wg-box-content-title-flex">
                 <a href="">Ver Galeria</a>
              <!--<i class="bi bi-arrow-down-circle bg-text-warning" style="font-size: 4rem;"></i>-->   
               </div>
             </div>
+            <div></div>
           </div>
-          <div class="wg-box-content col-lg-4 col-md-6 mb-lg-0">
+          <div class="wg-box-content col-lg-4 col-md-4 mb-lg-0">
             <div class="wg-box-content-overlay"></div>
-            <img class="wg-box-content-image" src="./images/large/1.jpg">
+            <img class="wg-box-content-image" src="./images/large/14.jpg">
             <div class="wg-box-content-details wg-box-fadeIn-bottom">
               <h3 class="wg-box-content-title">Ver Galería</h3>
               <p class="wg-box-content-text">This is a short description</p>
@@ -129,7 +131,7 @@
 
       
 
-        
+      </section>
      <!--
             <div class="main__presentation">
               <div class="main__presentation__titles" id="portafolio">
@@ -264,7 +266,7 @@
       
     </main>
     <footer class="footer" id="footer">
-      <form class="footer__form" id="form" action="https://formsubmit.co/leolbarrios20@gmail.com" method="POST" class="container">
+      <form class="footer__form" id="form" action="https://formsubmit.co/leolbarrios20@gmail.com" method="POST" class="container-fluid">
         <section class="footer__form__query col-10 mx-auto">
             <h4 >Realizá tu consulta</h4>
             <input class="footer__form__query__controls" type="text" name="nombre" id="nombres" placeholder="Ingresá tu Nombre" required>
