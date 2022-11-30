@@ -13,7 +13,6 @@
         background-repeat: no-repeat;
         background-size: cover;
         margin-bottom: 250px;
-        
     
         .header{
     
@@ -42,14 +41,15 @@
                     .collapse{
     
                         .navbar-nav{
-    
-                            li{
-    
-                                .nav{
-                                    &:hover{
-                                        background-color: $color-principal;
+
+                                .nav-item{
+                                    .nav-link{
+                                        margin: 0 25px;
+                                        letter-spacing: 2px;
                                     }
                                 }
+    
+                            li{
     
                                 li:after{
                                     display: block;
@@ -154,15 +154,23 @@
       }
   }
 .box{
-    display: grid;
+    display: flex;
     place-items: center;
+    flex-direction: column;
+    gap: 20px;
 
     .contenedor,.contenedor2,.contenedor3,.contenedor4{
-        height: 100vmin;
-        width: 90vmin;
+        height: 110vmin;
+        width: 80vmin;
         position: relative;
         overflow: hidden;
-        margin: 20px;
+
+        
+        @media screen and (max-width: 700px) {
+            height: 100vmin;
+            width: 70vmin;
+        }
+
 
         .img{
             width: 100%;
@@ -182,9 +190,6 @@
             background-color: transparent;
             outline: none;
             margin-left: -20px;
-
-
-      
           }
 
           input[type=range]::-webkit-slider-thumb{
