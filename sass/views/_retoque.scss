@@ -1,68 +1,143 @@
-
-.backgroundRetoque{
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-position: center;
-    background-repeat: no-repeat;
- 
-
-    .header{
-
-        position: sticky;
-        z-index: 1000;
+.bodyContainerRetoque{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    background-color: #111111;
+    .backgroundRetoque{
+        height: 12vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: rgb(12, 12, 12);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-bottom: 250px;
         
-        .navbar{
-            
-            .container-fluid{
-
-                .navbar-brand{
-
-                    i{
-                        font-size: 35px;
-                        padding-right: 5px;
-                        color: black;
-                    }
-
-                    span{
-                        font-size: 35px;
-                        padding-right: 100px;
-                    }
-                }
-
-
-                .collapse{
-
-                    .navbar-nav{
-
-                        li{
-
-                            .nav{
-                                &:hover{
-                                    background-color: $color-principal;
-                                }
-                            }
-
-                            li:after{
-                                display: block;
-                            }
-
-                            li:hover:after{
-                                transform: scale(1);
-                            }
+    
+        .header{
+    
+            position: sticky;
+            top: 0;
+            z-index: 50000;
+    
+            .navbar{
+                
+                .container-fluid{
+    
+                    .navbar-brand{
+    
+                        i{
+                            font-size: 35px;
+                            padding-right: 5px;
+                        }
+    
+                        span{
+                            font-size: 35px;
+                            padding-right: 100px;
                         }
                     }
-
+    
+    
+                    .collapse{
+    
+                        .navbar-nav{
+    
+                            li{
+    
+                                .nav{
+                                    &:hover{
+                                        background-color: $color-principal;
+                                    }
+                                }
+    
+                                li:after{
+                                    display: block;
+                                }
+    
+                                li:hover:after{
+                                    transform: scale(1);
+                                }
+                            }
+                        }
+    
+                    }
+    
                 }
-
+    
+                img{
+                    -webkit-filter: invert(100%);
+                }
             }
-
+    
         }
-
+    
+        .background__title{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-content: center;
+            align-items: center;
+            width: 100%;
+            text-align: center;
+    
+            & h1{
+                color: rgba(255, 255, 255, 255);
+                font-size: 95px;
+                letter-spacing: 30px;
+                font-weight: 400;
+                text-shadow: -2px 1px 10px rgba(0,0,0,0.89);
+                text-transform: uppercase;
+                margin-left: 20px;
+                position: relative;
+    
+                @media screen and (max-width:850px){
+                    font-size: 50px;
+                }
+    
+                @media screen and (max-width:600px){
+                    font-size: 30px;
+                    letter-spacing: 20px;
+                }
+    
+                @media screen and (max-height: 500px) {
+                    font-size: 50px;
+                }
+            }
+            
+            & h2{
+                color: rgb(255, 255, 255);
+                font-size: 25px;
+                letter-spacing: 10px;
+                font-weight: lighter;
+                text-shadow: -2px 1px 2px rgba(0,0,0,0.59);
+                
+    
+                @media screen and (max-width:600px){
+                    font-size: 18px;
+                }
+    
+                
+                @media screen and (max-height: 500px) {
+                    font-size: 18px;
+                }
+            }
+    
+            a{
+                list-style: none;
+            li{
+                i{
+                    color: #f0ad4e;
+                }
+            }
+            }
+        
+        }
+    
     }
-
+    
 }
+
 
 .flex{
     display: flex;
