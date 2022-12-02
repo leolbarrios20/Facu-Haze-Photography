@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/translated.css">
+    <link rel="stylesheet" href="../css/translated.css">
+    <link rel="stylesheet" href="../css/hover.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="/css/hover.css">
     <title>Facu Haze</title>
 </head>
 <body class="bodyContainerRetoque"> 
@@ -20,14 +20,14 @@
               <i class="bi bi-camera-fill"></i>
               <span class="text-warning">FH</span>
             </a>
-            <img class="d-md-none" src="/images/icons/menu.svg" alt="" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <img class="d-md-none" src="../images/icons/menu.svg" alt="" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <div class="collapse navbar-collapse" id="menu">
               <ul class="navbar-nav me-auto">
                 <li class="nav-item">
-                  <a  class="nav-link active m-2  nav text-white hvr-underline-from-center" href="../index.html">Inicio</a>
+                  <a  class="nav-link active m-2 nav text-white hvr-underline-from-center" href="../index.html">Inicio</a>
                 </li>
                 <li class="nav-item ">
-                  <a class="nav-link  m-2 nav text-white hvr-underline-from-center" href="/html/retoque.html">Portafolio</a>
+                  <a class="nav-link m-2 nav text-white hvr-underline-from-center" href="../html/retoque.html">Portafolio</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link  m-2 nav text-white hvr-underline-from-center" href="#" >Contacto</a>
@@ -75,38 +75,32 @@
         
       </section>
     <main>
-      <div class="flex">
-        <h1>Antes</h1> 
-        <h1>Despues</h1> 
+      <div class="retoque"> 
+        <h5>Retoque Digital</h5>
+        <p>En esta sección podrás ver el antes y despues de la fotografía. Solo deslizá y probá.</p>
       </div>
-
-<div class="box">
-
-
-  <div class="contenedor">
-    <img class="img" src="/images/large/ori 1.jpg">
-    <img class="img" id="my-img" src="/images/large/ori 2.jpg">
-    <input type="range" min="0" max="100" value="50" id="slider" oninput="slide()">
-  </div>
-  <div class="contenedor2">
-    <img class="img" src="/images/large//15.jpg">
-    <img class="img" id="my-img2" src="/images/large/16.jpg">
-    <input type="range" min="0" max="100" value="50" id="slider2" oninput="slide2()">
-  </div>
-  <div class="contenedor3">
-    <img class="img" src="/images/large/RIRI-28.jpg">
-    <img class="img" id="my-img3" src="/images/large/RIRI-29.jpg">
-    <input type="range" min="0" max="100" value="50" id="slider3" oninput="slide3()">
-  </div>
-  <div class="contenedor4">
-    <img class="img" src="/images/large/RIRI-28.jpg">
-    <img class="img" id="my-img4" src="/images/large/RIRI-29.jpg">
-    <input type="range" min="0" max="100" value="50" id="slider4" oninput="slide4()">
-  </div>
-
-</div>
-
-    
+      <div class="box">
+        <div class="contenedor">
+          <img class="img" src="../images/large/ori 1.jpg">
+          <img class="img" id="my-img" src="../images/large/ori 2.jpg">
+          <input type="range" min="0" max="100" value="50" id="slider" oninput="slide()">
+        </div>
+        <div class="contenedor2">
+          <img class="img" src="../images/large//15.jpg">
+          <img class="img" id="my-img2" src="../images/large/16.jpg">
+          <input type="range" min="0" max="100" value="50" id="slider2" oninput="slide2()">
+        </div>
+        <div class="contenedor3">
+          <img class="img" src="../images/large/RIRI-28.jpg">
+          <img class="img" id="my-img3" src="../images/large/RIRI-29.jpg">
+          <input type="range" min="0" max="100" value="50" id="slider3" oninput="slide3()">
+        </div>
+        <div class="contenedor4">
+          <img class="img" src="../images/large/RIRI-28.jpg">
+          <img class="img" id="my-img4" src="../images/large/RIRI-29.jpg">
+          <input type="range" min="0" max="100" value="50" id="slider4" oninput="slide4()">
+        </div>
+      </div>
     </main>
     <footer class="footer" id="footer">
       <form class="footer__form" id="form" action="https://formsubmit.co/leolbarrios20@gmail.com" method="POST" class="container-fluid">

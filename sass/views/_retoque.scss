@@ -8,16 +8,15 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        background-color: rgb(12, 12, 12);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        margin-bottom: 250px;
-    
+
         .header{
-    
             position: sticky;
             top: 0;
+            background-color: #00000034;
+            backdrop-filter: blur(5px);
             z-index: 50000;
     
             .navbar{
@@ -41,15 +40,9 @@
                     .collapse{
     
                         .navbar-nav{
-
-                                .nav-item{
-                                    .nav-link{
-                                        margin: 0 25px;
-                                        letter-spacing: 2px;
-                                    }
-                                }
     
                             li{
+    
     
                                 li:after{
                                     display: block;
@@ -138,21 +131,6 @@
     
 }
 
-
-.flex{
-    display: flex;
-    justify-content: center;
-    gap: 30%;
-    margin: 0 2%;
-    position: sticky;
-    top: 0;
-    z-index: 10000;
-
-    .flex h1{
-        font-size: 16px;
-        padding-top: 25px;
-      }
-  }
 .box{
     display: flex;
     place-items: center;
@@ -167,8 +145,8 @@
 
         
         @media screen and (max-width: 700px) {
-            height: 100vmin;
-            width: 70vmin;
+            height: 130vmin;
+            width: 100vmin;
         }
 
 
@@ -202,8 +180,41 @@
             border-radius: 50%;
             background-size: contain;
             cursor: pointer;
+
+            @media screen and (max-width: 700px) {
+                height: 30px;
+                width: 30px;
+            }
         }
     }
 }
     
+
+main{
+    .retoque{
+
+        text-align: center;
+        color: rgb(240, 236, 236);
+
+        h5{
+            font-size: 45px;
+            padding: 10px;
+
+            
+            @media screen and (max-width: 700px) {
+                font-size: 28px;
+            }
+        }
+
+
+        p{
+            font-size: 25px;
+            padding: 10px;
+            
+            @media screen and (max-width: 700px) {
+                font-size: 18px;
+            }
+        }
+    }
+}
 
