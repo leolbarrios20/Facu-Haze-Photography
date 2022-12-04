@@ -107,7 +107,7 @@
             letter-spacing: 30px;
             font-weight: 300;
             text-transform: uppercase;
-            margin-left: 20px;
+            margin-left: 5%;
             position: relative;
             background-image: linear-gradient(to bottom, #8c5f74, #ba6c76, #de8069, #ea8b5e, #f19952, #f3a944, #f5a73c, #f8a533, #faa22a, #fda01f);
             background-clip: text;
@@ -125,8 +125,8 @@
             }
 
             @media screen and (max-width:600px){
-                font-size: 35px;
-                letter-spacing: 20px;
+                font-size: 45px;
+                letter-spacing: 15px;
             }
 
         }
@@ -145,11 +145,7 @@
 
             @media screen and (max-width:600px){
                 font-size: 15px;
-            }
-
-            
-            @media screen and (max-height: 500px) {
-                font-size: 15px;
+                letter-spacing: 5px;
             }
         }
 

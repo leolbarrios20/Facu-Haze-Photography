@@ -138,6 +138,11 @@
           @media screen and (max-width: 1300px) {
             text-align: center;
         }
+
+        @media screen and (max-width: 600px) {
+          text-align: center;
+          font-size: 40px;
+      }
         }
 
         h6{
@@ -163,6 +168,10 @@
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
 
+          @media screen and (max-width: 600px) {
+            font-weight: normal;
+        }
+
         }
 
         img{
@@ -173,6 +182,11 @@
           @media screen and (max-width: 1300px) {
             max-width: 600px;
         }
+
+        
+        @media screen and (max-width: 600px) {
+          border-radius: 0;
+      }
         }
 
 

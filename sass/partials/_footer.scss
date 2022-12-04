@@ -7,7 +7,7 @@
 
 
     .footer__form{
-      margin-top: 50px;
+
         .footer__form__query {
             max-width: 800px;
             background-color: transparent;
@@ -33,6 +33,18 @@
                 font-weight: bold;
                 text-align: left;
                 letter-spacing: 7px;
+                font-family: "miFuente", sans-serif;
+                background-image: linear-gradient(to bottom, #8c5f74, #ba6c76, #de8069, #ea8b5e, #f19952, #f3a944, #f5a73c, #f8a533, #faa22a, #fda01f);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+
+                
+              @media screen and (max-width: 1300px) {
+                  font-size: 20px;
+                  text-align: center;
+                  letter-spacing: 4px;
+              }
               }
 
               .footer__form__query__textarea{

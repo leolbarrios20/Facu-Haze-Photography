@@ -72,7 +72,7 @@
       letter-spacing: 30px;
       font-weight: 300;
       text-transform: uppercase;
-      margin-left: 20px;
+      margin-left: 5%;
       position: relative;
       background-image: linear-gradient(to bottom, #8c5f74, #ba6c76, #de8069, #ea8b5e, #f19952, #f3a944, #f5a73c, #f8a533, #faa22a, #fda01f);
       background-clip: text;
@@ -87,8 +87,8 @@
           font-size: 50px; } }
       @media screen and (max-width: 600px) {
         .background .background__title h1 {
-          font-size: 35px;
-          letter-spacing: 20px; } }
+          font-size: 45px;
+          letter-spacing: 15px; } }
     .background .background__title h2 {
       color: white;
       font-size: 25px;
@@ -101,10 +101,8 @@
           font-size: 18px; } }
       @media screen and (max-width: 600px) {
         .background .background__title h2 {
-          font-size: 15px; } }
-      @media screen and (max-height: 500px) {
-        .background .background__title h2 {
-          font-size: 15px; } }
+          font-size: 15px;
+          letter-spacing: 5px; } }
     .background .background__title a li i {
       color: #f0ad4e;
       background-image: linear-gradient(to bottom, #424242, #605261, #8c5f74, #ba6c76, #de8069, #ea8b5e, #f19952, #f3a944, #f5a73c, #f8a533, #faa22a, #fda01f);
@@ -117,54 +115,62 @@
   background-color: #0e0e0e;
   margin: 0;
   padding: 0; }
-  .footer .footer__form {
-    margin-top: 50px; }
-    .footer .footer__form .footer__form__query {
-      max-width: 800px;
+  .footer .footer__form .footer__form__query {
+    max-width: 800px;
+    background-color: transparent;
+    padding: 30px 0;
+    color: #ebebeb; }
+    .footer .footer__form .footer__form__query .footer__form__query__button {
+      width: 100%;
+      border: solid white 2px;
       background-color: transparent;
-      padding: 30px 0;
-      color: #ebebeb; }
-      .footer .footer__form .footer__form__query .footer__form__query__button {
-        width: 100%;
-        border: solid white 2px;
-        background-color: transparent;
-        padding: 12px;
-        color: white;
-        margin: 16px 0;
-        font-size: 16px; }
-      .footer .footer__form .footer__form__query h4 {
-        font-size: 25px;
-        margin-bottom: 20px;
-        font-weight: bold;
-        text-align: left;
-        letter-spacing: 7px; }
-      .footer .footer__form .footer__form__query .footer__form__query__textarea {
-        background-color: transparent;
-        margin-top: 20px;
-        font-size: 16px;
-        width: 100%;
-        border: solid white 2px;
-        color: black;
-        padding: 10px; }
-        .footer .footer__form .footer__form__query .footer__form__query__textarea::placeholder {
-          padding: 2px;
-          color: rgba(255, 255, 255, 0.404);
-          font-size: 13px; }
-      .footer .footer__form .footer__form__query .footer__form__query__controls {
-        width: 100%;
-        padding: 10px;
-        margin-bottom: 16px;
-        border-bottom: 2px solid white;
-        font-size: 15px;
-        color: white;
-        background-color: transparent;
-        border-top: none;
-        border-left: none;
-        border-right: none; }
-        .footer .footer__form .footer__form__query .footer__form__query__controls::placeholder {
-          padding: 2px;
-          color: rgba(255, 255, 255, 0.404);
-          font-size: 13px; }
+      padding: 12px;
+      color: white;
+      margin: 16px 0;
+      font-size: 16px; }
+    .footer .footer__form .footer__form__query h4 {
+      font-size: 25px;
+      margin-bottom: 20px;
+      font-weight: bold;
+      text-align: left;
+      letter-spacing: 7px;
+      font-family: "miFuente", sans-serif;
+      background-image: linear-gradient(to bottom, #8c5f74, #ba6c76, #de8069, #ea8b5e, #f19952, #f3a944, #f5a73c, #f8a533, #faa22a, #fda01f);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; }
+      @media screen and (max-width: 1300px) {
+        .footer .footer__form .footer__form__query h4 {
+          font-size: 20px;
+          text-align: center;
+          letter-spacing: 4px; } }
+    .footer .footer__form .footer__form__query .footer__form__query__textarea {
+      background-color: transparent;
+      margin-top: 20px;
+      font-size: 16px;
+      width: 100%;
+      border: solid white 2px;
+      color: black;
+      padding: 10px; }
+      .footer .footer__form .footer__form__query .footer__form__query__textarea::placeholder {
+        padding: 2px;
+        color: rgba(255, 255, 255, 0.404);
+        font-size: 13px; }
+    .footer .footer__form .footer__form__query .footer__form__query__controls {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 16px;
+      border-bottom: 2px solid white;
+      font-size: 15px;
+      color: white;
+      background-color: transparent;
+      border-top: none;
+      border-left: none;
+      border-right: none; }
+      .footer .footer__form .footer__form__query .footer__form__query__controls::placeholder {
+        padding: 2px;
+        color: rgba(255, 255, 255, 0.404);
+        font-size: 13px; }
 
 /*VIEWS*/
 /*HOME*/
@@ -267,6 +273,10 @@
       @media screen and (max-width: 1300px) {
         .bodyContainer main .bottom h4 {
           text-align: center; } }
+      @media screen and (max-width: 600px) {
+        .bodyContainer main .bottom h4 {
+          text-align: center;
+          font-size: 40px; } }
     .bodyContainer main .bottom h6 {
       font-size: 30px;
       color: white;
@@ -283,6 +293,9 @@
       background-clip: text;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; }
+      @media screen and (max-width: 600px) {
+        .bodyContainer main .bottom p {
+          font-weight: normal; } }
     .bodyContainer main .bottom img {
       width: 100%;
       max-width: 700px;
@@ -290,6 +303,9 @@
       @media screen and (max-width: 1300px) {
         .bodyContainer main .bottom img {
           max-width: 600px; } }
+      @media screen and (max-width: 600px) {
+        .bodyContainer main .bottom img {
+          border-radius: 0; } }
   .bodyContainer main h1 {
     text-align: left;
     color: #e9e9e9;
