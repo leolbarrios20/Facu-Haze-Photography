@@ -11,7 +11,7 @@
 /*HEADER*/
 @font-face {
   font-family: "miFuente";
-  src: url(/Black_Way.otf); }
+  src: url(../Black_Way.otf); }
 
 .background {
   height: 100vh;
@@ -87,7 +87,7 @@
           font-size: 50px; } }
       @media screen and (max-width: 600px) {
         .background .background__title h1 {
-          font-size: 55px;
+          font-size: 35px;
           letter-spacing: 20px; } }
     .background .background__title h2 {
       color: white;
@@ -176,12 +176,20 @@
   .bodyContainer main #gallery {
     max-width: 1700px;
     margin-bottom: 300px; }
+    @media screen and (max-width: 600px) {
+      .bodyContainer main #gallery {
+        margin-bottom: 50px; } }
     .bodyContainer main #gallery .gallery__nav ul {
       margin: 0 4% 5% 0; }
+      @media screen and (max-width: 600px) {
+        .bodyContainer main #gallery .gallery__nav ul {
+          margin: 0 5% 5% 0; } }
       .bodyContainer main #gallery .gallery__nav ul li {
         display: flex;
-        justify-content: space-evenly;
-        gap: 5%; }
+        justify-content: space-evenly; }
+        @media screen and (max-width: 600px) {
+          .bodyContainer main #gallery .gallery__nav ul li {
+            justify-content: space-between; } }
         .bodyContainer main #gallery .gallery__nav ul li .active {
           text-decoration: none;
           background-color: rgba(0, 0, 0, 0);
@@ -190,9 +198,12 @@
           color: #fffdfd;
           width: 150px;
           font-weight: bold;
-          box-shadow: 1px 1px 10px #fda01f;
-          border-top-left-radius: 15px;
-          border-top-right-radius: 15px; }
+          box-shadow: 1px 1px 10px #fda01f; }
+          @media screen and (max-width: 600px) {
+            .bodyContainer main #gallery .gallery__nav ul li .active {
+              font-size: 12px;
+              padding: 10px 15px 10px 15px;
+              width: auto; } }
         .bodyContainer main #gallery .gallery__nav ul li a {
           text-decoration: none;
           background-color: rgba(255, 255, 255, 0);
@@ -201,13 +212,17 @@
           color: #fda01f;
           width: 150px;
           font-weight: bold;
-          border-top-left-radius: 15px;
-          border-top-right-radius: 15px;
           transition: 0.4s;
           background-image: linear-gradient(to bottom, #8c5f74, #ba6c76, #de8069, #ea8b5e, #f19952, #f3a944, #f5a73c, #f8a533, #faa22a, #fda01f);
           background-clip: text;
           -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent; }
+          -webkit-text-fill-color: transparent;
+          border-radius: 10px; }
+          @media screen and (max-width: 600px) {
+            .bodyContainer main #gallery .gallery__nav ul li a {
+              font-size: 12px;
+              padding: 10px 15px 10px 15px;
+              width: auto; } }
           .bodyContainer main #gallery .gallery__nav ul li a:hover {
             box-shadow: 1px 1px 10px #fda01f;
             color: #fda01f;
@@ -222,7 +237,11 @@
       background-image: linear-gradient(to bottom, #8c5f74, #ba6c76, #de8069, #ea8b5e, #f19952, #f3a944, #f5a73c, #f8a533, #faa22a, #fda01f);
       background-clip: text;
       -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent; }
+      -webkit-text-fill-color: transparent;
+      margin-top: 50px; }
+      @media screen and (max-width: 600px) {
+        .bodyContainer main #gallery h2 {
+          font-size: 30px; } }
   .bodyContainer main .bottom {
     /*   background-image: linear-gradient(to top right,  #605261, #8c5f74, #ba6c76, #de8069, #ea8b5e, #f19952, #f3a944, #f5a73c, #f8a533, #faa22a, #fda01f); */
     padding: 5%;
@@ -259,7 +278,7 @@
       font-size: 15px;
       font-weight: 600;
       text-align: justify;
-      line-height: 20px;
+      line-height: 25px;
       background-image: linear-gradient(to bottom, #de8069, #ea8b5e, #f19952, #f3a944, #f5a73c, #f8a533, #faa22a, #fda01f);
       background-clip: text;
       -webkit-background-clip: text;
@@ -279,8 +298,7 @@
     margin: 0 0 0 6%; }
   .bodyContainer main .presentation {
     background-image: linear-gradient(to left, #424242, #605261, #8c5f74, #ba6c76, #de8069, #ea8b5e, #f19952, #f3a944, #f5a73c, #f8a533, #faa22a, #fda01f);
-    height: 3px;
-    margin-bottom: 100px; }
+    height: 3px; }
   .bodyContainer main .main .wg-box-content {
     position: relative; }
     .bodyContainer main .main .wg-box-content .wg-box-content-overlay {

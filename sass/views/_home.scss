@@ -12,14 +12,27 @@
         max-width: 1700px;
         margin-bottom: 300px;
 
+        @media screen and (max-width: 600px) {
+          margin-bottom: 50px;
+      }
+
         .gallery__nav{
           
           ul{
             margin: 0 4% 5% 0;
+
+            @media screen and (max-width: 600px) {
+              margin: 0 5% 5% 0;
+          }
             li{
               display: flex;
               justify-content: space-evenly;
-              gap: 5%;
+
+              
+              @media screen and (max-width: 600px) {
+                justify-content: space-between;
+            }
+
 
               .active{
                 text-decoration: none;
@@ -30,8 +43,14 @@
                 width: 150px;
                 font-weight: bold;
                 box-shadow: 1px 1px 10px #fda01f;
-                border-top-left-radius: 15px;
-                border-top-right-radius: 15px;
+
+                
+                @media screen and (max-width: 600px) {
+                  font-size: 12px;
+                  padding: 10px 15px 10px 15px;
+                  width: auto;
+              }
+
 
               }
 
@@ -43,13 +62,18 @@
                 color: #fda01f;
                 width: 150px;
                 font-weight: bold;
-                border-top-left-radius: 15px;
-                border-top-right-radius: 15px;
                 transition: 0.4s;
                 background-image: linear-gradient(to bottom, #8c5f74, #ba6c76, #de8069, #ea8b5e, #f19952, #f3a944, #f5a73c, #f8a533, #faa22a, #fda01f);
                 background-clip: text;
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
+                border-radius: 10px;
+
+                @media screen and (max-width: 600px) {
+                  font-size: 12px;
+                  padding: 10px 15px 10px 15px;
+                  width: auto;
+              }
 
                 &:hover{
                   box-shadow: 1px 1px 10px #fda01f;
@@ -75,6 +99,12 @@
           background-clip: text;
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
+          margin-top: 50px;
+
+          @media screen and (max-width: 600px) {
+            font-size: 30px;
+        }
+  
           
         }
       }
@@ -127,7 +157,7 @@
           font-size: 15px;
           font-weight: 600;
           text-align: justify;
-          line-height: 20px;
+          line-height: 25px;
           background-image: linear-gradient(to bottom, #de8069, #ea8b5e, #f19952, #f3a944, #f5a73c, #f8a533, #faa22a, #fda01f);
           background-clip: text;
           -webkit-background-clip: text;
@@ -165,7 +195,6 @@
           background-image: linear-gradient(to left, #424242, #605261, #8c5f74, #ba6c76, #de8069, #ea8b5e, #f19952, #f3a944, #f5a73c, #f8a533, #faa22a, #fda01f);
           
           height: 3px;
-          margin-bottom: 100px;
 
         }
 

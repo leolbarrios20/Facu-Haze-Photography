@@ -1,7 +1,7 @@
 /*HEADER*/ 
 @font-face {
     font-family: "miFuente";
-    src: url(/Black_Way.otf);
+    src: url(../Black_Way.otf);
   }
   
 .background{
@@ -125,7 +125,7 @@
             }
 
             @media screen and (max-width:600px){
-                font-size: 55px;
+                font-size: 35px;
                 letter-spacing: 20px;
             }
 
