@@ -10,7 +10,6 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--<link rel="stylesheet" href="/Facu-Haze-Photography/css/translated.css"> -->
     <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css">
     <title>Facu Haze</title>
@@ -18,42 +17,45 @@
 <body class="bodyContainer">
     <section class="background">
       <header class="header" id="header" >
-      <nav class="navbar navbar-expand-md navbar-dark pt-3 ps-3 pe-3">
+      <nav class="navbar navbar-expand-md navbar-dark ps-3 pe-3">
         <div class="container-fluid">
           <a class="navbar-brand" href="./index.html">
             <i class="bi bi-camera-fill"></i>
             <span class="text-warning">FH</span>
           </a>
-          <img class="d-md-none" src="./images/icons/menu.svg" alt="" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <img class="d-md-none" src="./images/icons/menu.svg"  type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <div class="collapse navbar-collapse" id="menu">
             <ul class="navbar-nav me-auto">
               <li class="nav-item">
-                <a class="nav-link active m-2 p-2 nav text-white hvr-underline-from-center" href="#">Inicio</a>
+                <a class="nav-link m-2 p-2 nav text-white hvr-underline-from-center"  href="#">Inicio</a>
               </li>
               <li class="nav-item ">
-                <a class="nav-link p-2 m-2 nav text-white hvr-underline-from-center" href="./html/retoque.html">Portafolio</a>
+                <a class="nav-link p-2 m-2 nav text-white hvr-underline-from-center"  href="./html/retoque.html">Portafolio</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link p-2 m-2 nav text-white hvr-underline-from-center"  href="./html/retoque.html">Retoque Digital</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link p-2 m-2 nav text-white hvr-underline-from-center" href="#" >Contacto</a>
+                <a class="nav-link p-2 m-2 nav text-white hvr-underline-from-center"  href="#" >Contacto</a>
               </li>
             </ul>
             <hr class="text-white">
             <ul class="navbar-nav flex-row flex-wrap text-light">
               <li class="nav-item col-4 col-md-auto p-3">
                 <a class="text-white text-decoration-none d-flex flex-column" href="">
-                  <i style="font-size: 25px;" class="bi bi-whatsapp p-2"></i>
+                  <i style="font-size: 20px;" class="bi bi-whatsapp "></i>
                   <small class="d-md-none ms-2">Whatsapp</small>
                 </a>
               </li>
               <li class="nav-item col-4 col-md-auto p-3">
-                <a class="text-white  text-decoration-none d-flex flex-column" href="">
-                  <i style="font-size: 25px;" class="bi bi-instagram p-2"></i>
+                <a class="text-white text-decoration-none d-flex flex-column" href="">
+                  <i style="font-size: 20px;" class="bi bi-instagram "></i>
                   <small class="d-md-none">Instagram</small>
                 </a>
               </li>
               <li class="nav-item col-4 col-md-auto p-3">
                 <a class="text-white text-decoration-none d-flex flex-column" href="">
-                  <i style="font-size: 25px;" class="bi bi-behance p-2"></i>
+                  <i style="font-size: 20px;" class="bi bi-behance"></i>
                   <small class="d-md-none">Behance</small>
                 </a>
               </li>
@@ -64,12 +66,14 @@
       </header>
       <div class="background__title">
           <h1 class="animate__animated animate__zoomIn">Facu Haze</h1>
+          
           <h2 class="animate__animated animate__fadeInLeft">Fotografía & Retoque</h2>
           <a href="#main" class="animate__animated animate__fadeInUp">
             <li>
               <i class="bi bi-arrow-down-circle bg-text-warning" style="font-size: 4rem;"></i>
             </li>
           </a>
+          
       </div>
       <div class="background__empty">
         <div></div>
@@ -77,32 +81,25 @@
     </section>
     <main>
 
-      <h1>Galerias</h1>
 
-      <nav class="main__presentation__nav">
-        <ul> 
-          <li>
-            <a href="">Estudio</a>
-            <a href="">Retoque Digital</a>
-            <a href="">Paisajes</a>
-            <a href="">Viajes</a>
-          </li>
-        </ul>
-      </nav>
+      
 
-      <section id="main" class="main container-fluid" > 
-        <div id="gallery" class="row">
-          <div class="wg-box-content col-lg-4 col-md-4 mb-lg-0">
-            <div class="wg-box-content-overlay"></div>
-            <img class="wg-box-content-image" src="./images/large/7.jpg">
-            <div class="wg-box-content-details wg-box-fadeIn-bottom">
-              <h3 class="wg-box-content-title">Ver Galería</h3>
-              <p class="wg-box-content-text">This is a short description</p>
-              <div>
-                <a href="">Ver Galeria</a>
-             <!--<i class="bi bi-arrow-down-circle bg-text-warning" style="font-size: 4rem;"></i>-->   
-              </div>
-            </div>
+
+      <section class="presentation">
+
+      </section>
+
+      <section id="main" class="main container" > 
+        <div id="gallery" class="row  mx-auto">
+          <h2>Proyectos</h2>
+          <div class="gallery__nav">
+            <ul>
+              <li>
+                <a href="" class="active">Inicio</a>
+                <a href="">Retoque Digital</a>
+                <a href="">Fotografía</a>
+              </li>
+            </ul>
           </div>
           <div class="wg-box-content col-lg-4 col-md-4 mb-lg-0">
             <div class="wg-box-content-overlay"></div>
@@ -115,6 +112,18 @@
               </div>
             </div>
             <div></div>
+          </div>
+          <div class="wg-box-content col-lg-4 col-md-4 mb-lg-0">
+            <div class="wg-box-content-overlay"></div>
+            <img class="wg-box-content-image" src="./images/large/7.jpg">
+            <div class="wg-box-content-details wg-box-fadeIn-bottom">
+              <h3 class="wg-box-content-title">Ver Galería</h3>
+              <p class="wg-box-content-text">This is a short description</p>
+              <div>
+                <a href="">Ver Galeria</a>
+             <!--<i class="bi bi-arrow-down-circle bg-text-warning" style="font-size: 4rem;"></i>-->   
+              </div>
+            </div>
           </div>
           <div class="wg-box-content col-lg-4 col-md-4 mb-lg-0">
             <div class="wg-box-content-overlay"></div>
@@ -134,6 +143,17 @@
       
 
       </section>
+      <section class="presentation">
+
+      </section>
+      <section class="container-fluid mx-auto bottom">
+        <div>
+          <h4>¿Quien Soy?</h4>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere, pariatur asperiores fugit mollitia ipsum ipsa totam beatae ut temporibus architecto, soluta laborum. Quidem iusto assumenda placeat vitae itaque nostrum ab hic fuga! Incidunt, odit cupiditate tenetur earum, quia deleniti laboriosam deserunt in voluptas tempora quas molestias inventore ipsum! Laudantium odit id totam, magni ab dicta iste sapiente, praesentium voluptas officiis quibusdam quis expedita consectetur tempore consequatur reprehenderit voluptatibus, eaque quod iusto ratione nobis blanditiis dolorum temporibus ea. Alias, sapiente dolor!</p>
+        </div>
+        <img src="./images/large/6.jpg" alt="">
+      </section>
+
      <!--
             <div class="main__presentation">
               <div class="main__presentation__titles" id="portafolio">
@@ -264,8 +284,23 @@
               <img src="../img/iconos/flecha-derecha.png" alt="estudio">
               <a class="main__fullgalleryFlex__item" data-aos="fade-right" data-aos-duration="1000" href="#">Ver Galeria Completa</a>
             </div>
+
+
+
+
+                  <nav class="main__presentation__nav">
+        <ul> 
+          <li>
+            <a href="">Estudio</a>
+            <a href="">Viajes</a>
+            <a href="">Retoque Digital</a>
+            <a href="">Paisajes</a>
+            <a href="">Viajes</a>
+          </li>
+        </ul>
+      </nav>
 -->
-      
+
     </main>
     <footer class="footer" id="footer">
       <form class="footer__form" id="form" action="https://formsubmit.co/leolbarrios20@gmail.com" method="POST" class="container-fluid">

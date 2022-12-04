@@ -2187,7 +2187,7 @@
   left: 51%;
   right: 51%;
   bottom: 0;
-  background: #f0ad4e;
+  background-image: linear-gradient(to top, #424242, #605261, #8c5f74, #ba6c76, #de8069, #ea8b5e, #f19952, #f3a944, #f5a73c, #f8a533, #faa22a, #fda01f);
   height: 2px;
   -webkit-transition-property: left, right;
   transition-property: left, right;

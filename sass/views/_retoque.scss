@@ -1,135 +1,207 @@
-.bodyContainerRetoque{
-    padding: 0;
-    margin: 0;
-    overflow-x: hidden;
-    background-color: #111111;
-    .backgroundRetoque{
-        height: 12vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+/*HEADER*/ 
 
-        .header{
-            position: sticky;
-            top: 0;
-            background-color: #00000034;
-            backdrop-filter: blur(5px);
-            z-index: 50000;
+.backgroundRetoque{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url(../images/large/estudio/51.jpg); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode:darken;
+    background-size: cover;
+    background-color: #0000003d;
     
-            .navbar{
-                
-                .container-fluid{
-    
-                    .navbar-brand{
-    
-                        i{
-                            font-size: 35px;
-                            padding-right: 5px;
+
+    .navbar-expand-md{
+        padding: 10px;
+    }
+
+    .header{
+        position: sticky;
+        top: 0;
+        backdrop-filter: blur(5px);
+        z-index: 50000;
+
+
+        .navbar{
+            text-align: center;
+            .container-fluid{
+
+                .navbar-brand{
+
+                    i{
+                        font-size: 35px;
+                        padding-right: 5px;
+                    }
+
+                    span{
+                        font-weight: bold;
+                        font-size: 35px;
+                        margin-right: 150px;
+                        text-align: center;
+                        background-image: linear-gradient(to bottom, #424242, #605261, #8c5f74, #ba6c76, #de8069, #ea8b5e, #f19952, #f3a944, #f5a73c, #f8a533, #faa22a, #fda01f);
+                        background-clip: text;
+                        -webkit-background-clip: text;
+                         -webkit-text-fill-color: transparent;
+
+                        @media screen and (max-width:1200px){
+                            margin-right: 50px;
                         }
-    
-                        span{
-                            font-size: 35px;
-                            padding-right: 100px;
+
+                        @media screen and (max-width:850px){
+                            margin-right: 20px;
                         }
                     }
-    
-    
-                    .collapse{
-    
-                        .navbar-nav{
-    
-                            li{
-    
-    
-                                li:after{
-                                    display: block;
-                                }
-    
-                                li:hover:after{
-                                    transform: scale(1);
-                                }
+                }
+
+
+                .collapse{
+
+                    .navbar-nav{
+
+                        li{
+
+                            li:after{
+                                display: block;
+                            }
+
+                            li:hover:after{
+                                transform: scale(1);
                             }
                         }
-    
                     }
-    
+
                 }
-    
-                img{
-                    -webkit-filter: invert(100%);
-                }
+
             }
-    
+
+            img{
+                -webkit-filter: invert(100%);
+            }
         }
-    
-        .background__title{
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-            align-content: center;
-            align-items: center;
-            width: 100%;
-            text-align: center;
-    
-            & h1{
-                color: rgba(255, 255, 255, 255);
-                font-size: 95px;
-                letter-spacing: 30px;
-                font-weight: 400;
-                text-shadow: -2px 1px 10px rgba(0,0,0,0.89);
-                text-transform: uppercase;
-                margin-left: 20px;
-                position: relative;
-    
-                @media screen and (max-width:850px){
-                    font-size: 50px;
-                }
-    
-                @media screen and (max-width:600px){
-                    font-size: 30px;
-                    letter-spacing: 20px;
-                }
-    
-                @media screen and (max-height: 500px) {
-                    font-size: 50px;
-                }
+
+    }
+
+    .background__title{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-content: center;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+
+
+
+
+        & h1{
+            color: rgba(255, 255, 255, 255);
+            font-size: 100px;
+            letter-spacing: 30px;
+            font-weight: 400;
+            text-transform: uppercase;
+            margin-left: 20px;
+            position: relative;
+            background-image: linear-gradient(to left, #8c5f74, #ba6c76, #de8069, #ea8b5e, #f19952, #f3a944, #f5a73c, #f8a533, #faa22a, #fda01f);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+ 
+            @media screen and (max-width:1200px){
+                font-size: 50px;
+            }
+
+
+            @media screen and (max-width:850px){
+                font-size: 50px;
+            }
+
+            @media screen and (max-width:600px){
+                font-size: 35px;
+                letter-spacing: 20px;
+                font-weight: 600;
+            }
+
+            @media screen and (max-height: 500px) {
+                font-size: 50px;
+            }
+        }
+        
+        & h2{
+            color: rgb(255, 255, 255);
+            font-size: 20px;
+            letter-spacing: 10px;
+            font-weight: normal;
+            text-shadow: -2px 1px 2px rgba(0,0,0,0.59);
+
+            @media screen and (max-width:1200px){
+                font-size: 18px;
             }
             
-            & h2{
-                color: rgb(255, 255, 255);
-                font-size: 25px;
-                letter-spacing: 10px;
-                font-weight: lighter;
-                text-shadow: -2px 1px 2px rgba(0,0,0,0.59);
-                
-    
-                @media screen and (max-width:600px){
-                    font-size: 18px;
-                }
-    
-                
-                @media screen and (max-height: 500px) {
-                    font-size: 18px;
-                }
+
+            @media screen and (max-width:600px){
+                font-size: 15px;
+                letter-spacing: 5px;
             }
-    
-            a{
-                list-style: none;
-            li{
-                i{
-                    color: #f0ad4e;
-                }
+
+            
+            @media screen and (max-height: 500px) {
+                font-size: 15px;
             }
+        }
+
+        a{
+        li{
+            i{
+                color: #f0ad4e;
+                background-image: linear-gradient(to bottom, #424242, #605261, #8c5f74, #ba6c76, #de8069, #ea8b5e, #f19952, #f3a944, #f5a73c, #f8a533, #faa22a, #fda01f);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
             }
-        
+        }
         }
     
     }
-    
+
 }
+
+main{
+    .retoque{
+
+        text-align: center;
+        color: rgb(240, 236, 236);
+
+        h5{
+            font-size: 45px;
+            padding: 10px;
+
+            
+            @media screen and (max-width: 700px) {
+                font-size: 28px;
+            }
+        }
+
+
+        p{
+            font-size: 25px;
+            padding: 10px;
+            
+            @media screen and (max-width: 700px) {
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
 
 .box{
     display: flex;
@@ -138,8 +210,8 @@
     gap: 20px;
 
     .contenedor,.contenedor2,.contenedor3,.contenedor4{
-        height: 110vmin;
-        width: 80vmin;
+        height: 140vmin;
+        width: 110vmin;
         position: relative;
         overflow: hidden;
 
@@ -189,32 +261,3 @@
     }
 }
     
-
-main{
-    .retoque{
-
-        text-align: center;
-        color: rgb(240, 236, 236);
-
-        h5{
-            font-size: 45px;
-            padding: 10px;
-
-            
-            @media screen and (max-width: 700px) {
-                font-size: 28px;
-            }
-        }
-
-
-        p{
-            font-size: 25px;
-            padding: 10px;
-            
-            @media screen and (max-width: 700px) {
-                font-size: 18px;
-            }
-        }
-    }
-}
-
